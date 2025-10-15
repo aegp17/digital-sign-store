@@ -17,18 +17,23 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '18'
+        node-version: '20'
         cache: 'npm'
         
     - name: Install dependencies
       run: |
         cd apps/web
-        npm ci
+        npm ci --legacy-peer-deps
+        
+    - name: Type check
+      run: |
+        cd apps/web
+        npm run type-check
         
     - name: Build
       run: |
         cd apps/web
-        npm run build
+        npm run build:check
         
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
