@@ -19,7 +19,7 @@ export default defineConfig({
     outDir: 'dist',
     sourcemap: true
   },
-  base: '/digital-sign-store/',
+  base: process.env.NODE_ENV === 'production' ? '/digital-sign-store/' : '/',
   test: {
     globals: true,
     environment: 'jsdom'
