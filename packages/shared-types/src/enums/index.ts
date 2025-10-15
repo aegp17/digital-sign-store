@@ -1,0 +1,47 @@
+export enum SignatureRequestStatus {
+  REGISTERED = 'REGISTERED',
+  VALIDATING = 'VALIDATING',
+  REFUSED = 'REFUSED',
+  ERROR = 'ERROR',
+  APPROVED = 'APPROVED',
+  GENERATED = 'GENERATED',
+  EXPIRED = 'EXPIRED',
+}
+
+export enum ValidationStatus {
+  PENDING = 'PENDING',
+  MANUALLY_VALIDATING = 'MANUALLY_VALIDATING',
+  AUTOMATICALLY_VALIDATING = 'AUTOMATICALLY_VALIDATING',
+  ERROR = 'ERROR',
+  REFUSED = 'REFUSED',
+  COMPLETED = 'COMPLETED',
+}
+
+export enum ApplicationType {
+  NATURAL_PERSON = 'NATURAL_PERSON',
+  LEGAL_REPRESENTATIVE = 'LEGAL_REPRESENTATIVE',
+}
+
+export enum Period {
+  ONE_WEEK = 'ONE_WEEK',
+  ONE_MONTH = 'ONE_MONTH',
+  ONE_YEAR = 'ONE_YEAR',
+  TWO_YEARS = 'TWO_YEARS',
+  THREE_YEARS = 'THREE_YEARS',
+  FOUR_YEARS = 'FOUR_YEARS',
+  FIVE_YEARS = 'FIVE_YEARS',
+}
+
+export enum DocumentType {
+  CI = 'CI',
+}
+
+export enum CountryCode {
+  ECU = 'ECU',
+}
+
+export enum ObservationType {
+  INFO = 'INFO',
+  WARNING = 'WARNING',
+  ALERT = 'ALERT',
+}
