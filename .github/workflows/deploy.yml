@@ -40,7 +40,7 @@ jobs:
       - name: Build
         run: |
           cd apps/web
-          npm run build
+          npm run build -- --config vite.config.github.ts
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
