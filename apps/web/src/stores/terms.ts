@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
-import type { ApiResponse } from '@shared'
+import type { ApiResponse } from '@/types'
 
 export const useTermsStore = defineStore('terms', () => {
   const termsContent = ref<string>('')

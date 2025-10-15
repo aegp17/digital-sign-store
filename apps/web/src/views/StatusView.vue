@@ -84,7 +84,8 @@ import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import AppLayout from '@/components/Layout/AppLayout.vue'
 import { useSignatureRequestStore } from '@/stores/signatureRequest'
-import type { SignatureRequest, SignatureRequestStatus } from '@shared'
+import type { SignatureRequest } from '@/types'
+import { SignatureRequestStatus } from '@/types'
 
 const router = useRouter()
 const signatureRequestStore = useSignatureRequestStore()

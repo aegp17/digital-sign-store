@@ -1,5 +1,5 @@
 import { ref } from 'vue'
-import type { ApiResponse } from '@shared'
+import type { ApiResponse } from '@/types'
 
 export function useApi() {
   const isLoading = ref(false)

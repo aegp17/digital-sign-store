@@ -65,7 +65,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue'
+import { onMounted, computed } from 'vue'
 import AppLayout from '@/components/Layout/AppLayout.vue'
 import { useTermsStore } from '@/stores/terms'
 

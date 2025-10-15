@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
-import type { SignatureRequest, ApiResponse } from '@shared'
+import type { SignatureRequest, ApiResponse } from '@/types'
 
 export const useSignatureRequestStore = defineStore('signatureRequest', () => {
   const requests = ref<SignatureRequest[]>([])

@@ -151,7 +151,8 @@ import { ref, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import AppLayout from '@/components/Layout/AppLayout.vue'
 import { useSignatureRequestStore } from '@/stores/signatureRequest'
-import type { SignatureRequest, SignatureRequestStatus, ValidationStatus, ObservationType } from '@shared'
+import type { SignatureRequest } from '@/types'
+import { SignatureRequestStatus, ValidationStatus, ObservationType } from '@/types'
 
 const route = useRoute()
 const signatureRequestStore = useSignatureRequestStore()

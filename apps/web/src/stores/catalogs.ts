@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
-import type { Catalog, ApiResponse } from '@shared'
+import type { Catalog, ApiResponse } from '@/types'
 
 export const useCatalogsStore = defineStore('catalogs', () => {
   const catalogs = ref<Catalog>({
