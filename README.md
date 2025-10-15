@@ -1,6 +1,18 @@
-# Signature Onboarding App
+# Zelda Sign - Digital Signature Store
 
 Aplicación full-stack para la solicitud de firmas electrónicas que integra con la API de Firma Segura.
+
+## 🚀 Demo en Vivo
+
+**Demo:** https://aegp17.github.io/digital-sign-store/
+
+## 📋 Estado del Proyecto
+
+- ✅ **Frontend MVP:** Completado y funcional
+- ✅ **GitHub Pages:** Configurado y desplegado
+- ✅ **Monorepo:** Estructura completa con Vue 3 + NestJS
+- 🔄 **Backend API:** En desarrollo
+- 🔄 **Integración API:** Pendiente
 
 ## 🏗️ Arquitectura
 
@@ -15,15 +27,15 @@ Aplicación full-stack para la solicitud de firmas electrónicas que integra con
 ### Prerrequisitos
 
 - Node.js 18+
-- Docker y Docker Compose
+- Docker y Docker Compose (opcional)
 - PostgreSQL (si ejecutas localmente)
 
 ### Instalación
 
 1. Clona el repositorio:
 ```bash
-git clone <repository-url>
-cd signature-onboarding
+git clone git@github.com:aegp17/digital-sign-store.git
+cd digital-sign-store
 ```
 
 2. Instala dependencias:
@@ -45,27 +57,37 @@ npm run dev
 ### Desarrollo Local
 
 ```bash
-# Backend
-npm run dev:api
+# Frontend (MVP funcional)
+cd apps/web
+npm install
+npm run dev
 
-# Frontend
-npm run dev:web
+# Backend (en desarrollo)
+cd apps/api
+npm install
+npm run start:dev
 ```
+
+### Despliegue
+
+El proyecto se despliega automáticamente en GitHub Pages cuando se hace push a la rama `main`.
+
+**URL del Demo:** https://aegp17.github.io/digital-sign-store/
 
 ## 📁 Estructura del Proyecto
 
 ```
-signature-onboarding/
+digital-sign-store/
 ├── apps/
-│   ├── web/                 # Vue 3 SPA
-│   └── api/                 # NestJS API
+│   ├── web/                 # Vue 3 SPA (MVP funcional)
+│   └── api/                 # NestJS API (en desarrollo)
 ├── packages/
 │   ├── shared-types/        # DTOs y tipos compartidos
 │   └── eslint-config/      # Configuración ESLint
 ├── docker/                  # Dockerfiles
 ├── docs/                    # Documentación
 │   └── terms/              # Términos y condiciones
-├── prisma/                 # Esquemas de BD
+├── .github/workflows/       # GitHub Actions
 └── docker-compose.yml      # Orquestación
 ```
 
@@ -96,18 +118,22 @@ VITE_API_URL=http://localhost:8080
 
 ## 📋 Funcionalidades
 
-### Para Usuarios
-- ✅ Solicitud de firma electrónica
-- ✅ Carga de documentos
+### Para Usuarios (MVP Funcional)
+- ✅ Solicitud de firma electrónica en 4 pasos
+- ✅ Formulario con validaciones en tiempo real
+- ✅ Campo de teléfono con códigos de país
+- ✅ Carga de documentos con drag & drop
 - ✅ Simulación de pago
 - ✅ Aceptación de términos y condiciones
 - ✅ Consulta de estado de solicitud
+- ✅ Datos mock para testing
+- ✅ Diseño responsive
 
-### Para Administradores
-- ✅ Panel de administración
-- ✅ Logs de integración
-- ✅ Gestión de catálogos
-- ✅ Monitoreo de solicitudes
+### Para Administradores (En Desarrollo)
+- 🔄 Panel de administración
+- 🔄 Logs de integración
+- 🔄 Gestión de catálogos
+- 🔄 Monitoreo de solicitudes
 
 ## 🧪 Testing
 
@@ -170,9 +196,15 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 ## 🆘 Soporte
 
 Para soporte técnico o consultas:
-- Email: support@example.com
+- Email: support@zeldasign.com
 - Documentación: [docs/](./docs/)
-- Issues: [GitHub Issues](https://github.com/your-repo/issues)
+- Issues: [GitHub Issues](https://github.com/aegp17/digital-sign-store/issues)
+
+## 🔗 Enlaces
+
+- **Demo:** https://aegp17.github.io/digital-sign-store/
+- **Repositorio:** https://github.com/aegp17/digital-sign-store
+- **Documentación:** [docs/](./docs/)
 
 ---
 
